@@ -1,0 +1,12 @@
+C:\Users\Kim Nghi\source\repos\HOTELMANAGEMENT\HOTEL\bin\Debug\HOTEL.dll.config
+C:\Users\Kim Nghi\source\repos\HOTELMANAGEMENT\HOTEL\bin\Debug\HOTEL.dll
+C:\Users\Kim Nghi\source\repos\HOTELMANAGEMENT\HOTEL\bin\Debug\HOTEL.pdb
+C:\Users\Kim Nghi\source\repos\HOTELMANAGEMENT\HOTEL\bin\Debug\EntityFramework.dll
+C:\Users\Kim Nghi\source\repos\HOTELMANAGEMENT\HOTEL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Kim Nghi\source\repos\HOTELMANAGEMENT\HOTEL\bin\Debug\EntityFramework.xml
+C:\Users\Kim Nghi\source\repos\HOTELMANAGEMENT\HOTEL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Kim Nghi\source\repos\HOTELMANAGEMENT\HOTEL\obj\Debug\HOTELMANAGEMENT.DAL.csproj.AssemblyReference.cache
+C:\Users\Kim Nghi\source\repos\HOTELMANAGEMENT\HOTEL\obj\Debug\HOTELMANAGEMENT.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Kim Nghi\source\repos\HOTELMANAGEMENT\HOTEL\obj\Debug\HOTELMAN.4835653D.Up2Date
+C:\Users\Kim Nghi\source\repos\HOTELMANAGEMENT\HOTEL\obj\Debug\HOTEL.dll
+C:\Users\Kim Nghi\source\repos\HOTELMANAGEMENT\HOTEL\obj\Debug\HOTEL.pdb
