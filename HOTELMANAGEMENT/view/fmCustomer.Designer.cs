@@ -50,12 +50,10 @@
             this.FullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CitizenID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-          
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).BeginInit();
-            
             this.SuspendLayout();
             // 
             // groupBox3
@@ -250,6 +248,7 @@
             this.dgvCustomer.RowTemplate.Height = 24;
             this.dgvCustomer.Size = new System.Drawing.Size(744, 282);
             this.dgvCustomer.TabIndex = 20;
+            this.dgvCustomer.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCustomer_CellClick);
             this.dgvCustomer.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCustomer_CellContentClick_1);
             // 
             // CustomerID
@@ -276,9 +275,6 @@
             this.Phone.MinimumWidth = 6;
             this.Phone.Name = "Phone";
             // 
-            // qLKSDataSet1
-            // 
-            
             // fmCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -298,7 +294,6 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).EndInit();
-            
             this.ResumeLayout(false);
 
         }

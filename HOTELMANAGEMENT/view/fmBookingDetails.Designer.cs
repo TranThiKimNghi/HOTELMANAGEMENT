@@ -32,21 +32,16 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtQuantity = new System.Windows.Forms.TextBox();
             this.dgvBookingService = new System.Windows.Forms.DataGridView();
-            this.ServiceName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TotalService = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button5 = new System.Windows.Forms.Button();
             this.cmbServiceName = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbRoomID = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.dtpCO = new System.Windows.Forms.DateTimePicker();
@@ -58,6 +53,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cmbRoomStatus = new System.Windows.Forms.ComboBox();
             this.txtRoomPrice = new System.Windows.Forms.TextBox();
+            this.ServiceName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TotalService = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtCustomer = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBookingService)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -77,7 +77,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(30, 294);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(796, 385);
+            this.groupBox2.Size = new System.Drawing.Size(796, 396);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Sevice Details";
@@ -103,6 +103,7 @@
             // 
             this.dgvBookingService.AllowUserToAddRows = false;
             this.dgvBookingService.AllowUserToDeleteRows = false;
+            this.dgvBookingService.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvBookingService.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvBookingService.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBookingService.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -111,46 +112,15 @@
             this.Quantity,
             this.TotalService});
             this.dgvBookingService.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dgvBookingService.Location = new System.Drawing.Point(21, 146);
+            this.dgvBookingService.Location = new System.Drawing.Point(21, 114);
             this.dgvBookingService.Name = "dgvBookingService";
             this.dgvBookingService.ReadOnly = true;
             this.dgvBookingService.RowHeadersWidth = 51;
             this.dgvBookingService.RowTemplate.Height = 24;
-            this.dgvBookingService.Size = new System.Drawing.Size(742, 155);
+            this.dgvBookingService.Size = new System.Drawing.Size(749, 224);
             this.dgvBookingService.TabIndex = 18;
             this.dgvBookingService.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBookingService_CellClick);
-            // 
-            // ServiceName
-            // 
-            this.ServiceName.HeaderText = "Service Name";
-            this.ServiceName.MinimumWidth = 6;
-            this.ServiceName.Name = "ServiceName";
-            this.ServiceName.ReadOnly = true;
-            this.ServiceName.Width = 125;
-            // 
-            // Price
-            // 
-            this.Price.HeaderText = "Price";
-            this.Price.MinimumWidth = 6;
-            this.Price.Name = "Price";
-            this.Price.ReadOnly = true;
-            this.Price.Width = 125;
-            // 
-            // Quantity
-            // 
-            this.Quantity.HeaderText = "Quantity";
-            this.Quantity.MinimumWidth = 6;
-            this.Quantity.Name = "Quantity";
-            this.Quantity.ReadOnly = true;
-            this.Quantity.Width = 125;
-            // 
-            // TotalService
-            // 
-            this.TotalService.HeaderText = "TotalService";
-            this.TotalService.MinimumWidth = 6;
-            this.TotalService.Name = "TotalService";
-            this.TotalService.ReadOnly = true;
-            this.TotalService.Width = 125;
+            this.dgvBookingService.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBookingService_CellContentClick);
             // 
             // button5
             // 
@@ -182,12 +152,13 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(627, 324);
+            this.button3.Location = new System.Drawing.Point(627, 344);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(136, 46);
             this.button3.TabIndex = 6;
             this.button3.Text = "Payment";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -202,11 +173,11 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Moccasin;
-            this.groupBox1.Controls.Add(this.comboBox3);
+            this.groupBox1.Controls.Add(this.txtCustomer);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.comboBox2);
+            this.groupBox1.Controls.Add(this.cmbRoomID);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.dtpCO);
@@ -226,23 +197,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Room Details";
             // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(174, 98);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(218, 28);
-            this.comboBox3.TabIndex = 22;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(38, 98);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(130, 19);
+            this.label7.Size = new System.Drawing.Size(106, 19);
             this.label7.TabIndex = 21;
-            this.label7.Text = "CustomerName:";
+            this.label7.Text = "CustomerID:";
             // 
             // label6
             // 
@@ -250,24 +213,24 @@
             this.label6.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(38, 53);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(96, 19);
+            this.label6.Size = new System.Drawing.Size(89, 19);
             this.label6.TabIndex = 20;
-            this.label6.Text = "BookingID:";
+            this.label6.Text = "FullName:";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(174, 53);
+            this.textBox2.Location = new System.Drawing.Point(174, 45);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(218, 27);
             this.textBox2.TabIndex = 19;
             // 
-            // comboBox2
+            // cmbRoomID
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(174, 144);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(218, 28);
-            this.comboBox2.TabIndex = 18;
+            this.cmbRoomID.FormattingEnabled = true;
+            this.cmbRoomID.Location = new System.Drawing.Point(174, 144);
+            this.cmbRoomID.Name = "cmbRoomID";
+            this.cmbRoomID.Size = new System.Drawing.Size(218, 28);
+            this.cmbRoomID.TabIndex = 18;
             // 
             // label11
             // 
@@ -372,6 +335,41 @@
             this.txtRoomPrice.Size = new System.Drawing.Size(194, 27);
             this.txtRoomPrice.TabIndex = 2;
             // 
+            // ServiceName
+            // 
+            this.ServiceName.HeaderText = "Service Name";
+            this.ServiceName.MinimumWidth = 6;
+            this.ServiceName.Name = "ServiceName";
+            this.ServiceName.ReadOnly = true;
+            // 
+            // Price
+            // 
+            this.Price.HeaderText = "Price";
+            this.Price.MinimumWidth = 6;
+            this.Price.Name = "Price";
+            this.Price.ReadOnly = true;
+            // 
+            // Quantity
+            // 
+            this.Quantity.HeaderText = "Quantity";
+            this.Quantity.MinimumWidth = 6;
+            this.Quantity.Name = "Quantity";
+            this.Quantity.ReadOnly = true;
+            // 
+            // TotalService
+            // 
+            this.TotalService.HeaderText = "TotalService";
+            this.TotalService.MinimumWidth = 6;
+            this.TotalService.Name = "TotalService";
+            this.TotalService.ReadOnly = true;
+            // 
+            // txtCustomer
+            // 
+            this.txtCustomer.Location = new System.Drawing.Point(174, 90);
+            this.txtCustomer.Name = "txtCustomer";
+            this.txtCustomer.Size = new System.Drawing.Size(218, 27);
+            this.txtCustomer.TabIndex = 22;
+            // 
             // fmBookingDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -412,17 +410,17 @@
         private System.Windows.Forms.ComboBox cmbRoomStatus;
         private System.Windows.Forms.TextBox txtRoomPrice;
         private System.Windows.Forms.DataGridView dgvBookingService;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.ComboBox cmbRoomID;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtQuantity;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.DataGridViewTextBoxColumn ServiceName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
         private System.Windows.Forms.DataGridViewTextBoxColumn TotalService;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtQuantity;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCustomer;
     }
 }

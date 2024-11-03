@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|c:\\users\\kim nghi\\source\\repos\\hotelmanagement\\hotelmanagement\\view\\fmcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|solutionrelative:hotelmanagement\\view\\fmcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|c:\\users\\kim nghi\\source\\repos\\hotelmanagement\\hotelmanagement\\view\\fmcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|solutionrelative:hotelmanagement\\view\\fmcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|c:\\users\\kim nghi\\source\\repos\\hotelmanagement\\hotelmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|solutionrelative:hotelmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|c:\\users\\kim nghi\\source\\repos\\hotelmanagement\\hotelmanagement\\view\\fmpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|solutionrelative:hotelmanagement\\view\\fmpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|c:\\users\\kim nghi\\source\\repos\\hotelmanagement\\hotelmanagement\\view\\fmcustomer.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|solutionrelative:hotelmanagement\\view\\fmcustomer.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|c:\\users\\kim nghi\\source\\repos\\hotelmanagement\\hotelmanagement\\view\\fmservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,20 +27,32 @@
       "RelativeMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|solutionrelative:hotelmanagement\\view\\fmservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|c:\\users\\kim nghi\\source\\repos\\hotelmanagement\\hotelmanagement\\view\\fmbookingdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|solutionrelative:hotelmanagement\\view\\fmbookingdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|c:\\users\\kim nghi\\source\\repos\\hotelmanagement\\hotelmanagement\\view\\fmpayment.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|solutionrelative:hotelmanagement\\view\\fmpayment.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|c:\\users\\kim nghi\\source\\repos\\hotelmanagement\\hotelmanagement\\view\\fmcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|solutionrelative:hotelmanagement\\view\\fmcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|c:\\users\\kim nghi\\source\\repos\\hotelmanagement\\hotelmanagement\\view\\fmpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|solutionrelative:hotelmanagement\\view\\fmpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|c:\\users\\kim nghi\\source\\repos\\hotelmanagement\\hotelmanagement\\view\\fmroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|c:\\users\\kim nghi\\source\\repos\\hotelmanagement\\hotelmanagement\\view\\fmpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|solutionrelative:hotelmanagement\\view\\fmpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|c:\\users\\kim nghi\\source\\repos\\hotelmanagement\\hotelmanagement\\view\\fmbooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|solutionrelative:hotelmanagement\\view\\fmbooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\hotelmanagement\\view\\fmroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|solutionrelative:hotelmanagement\\view\\fmroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|c:\\users\\kim nghi\\source\\repos\\hotelmanagement\\hotelmanagement\\view\\fmroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|solutionrelative:hotelmanagement\\view\\fmroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|c:\\users\\kim nghi\\source\\repos\\hotelmanagement\\hotelmanagement\\view\\fmbookingdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|solutionrelative:hotelmanagement\\view\\fmbookingdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|c:\\users\\kim nghi\\source\\repos\\hotelmanagement\\hotelmanagement\\view\\fmbookingdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19897209-2866-4F2B-B02A-D3979FB8AE56}|HOTELMANAGEMENT\\HOTELMANAGEMENT.GUI.csproj|solutionrelative:hotelmanagement\\view\\fmbookingdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,37 +78,77 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "fmCustomer.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\view\\fmCustomer.Designer.cs",
+              "RelativeDocumentMoniker": "HOTELMANAGEMENT\\view\\fmCustomer.Designer.cs",
+              "ToolTip": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\view\\fmCustomer.Designer.cs*",
+              "RelativeToolTip": "HOTELMANAGEMENT\\view\\fmCustomer.Designer.cs*",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAAAI4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T20:11:57.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "fmCustomer.cs",
+              "DocumentMoniker": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\view\\fmCustomer.cs",
+              "RelativeDocumentMoniker": "HOTELMANAGEMENT\\view\\fmCustomer.cs",
+              "ToolTip": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\view\\fmCustomer.cs*",
+              "RelativeToolTip": "HOTELMANAGEMENT\\view\\fmCustomer.cs*",
+              "ViewState": "AgIAALcAAAAAAAAAAAAcwNAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T20:10:34.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "fmService.cs",
+              "DocumentMoniker": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\view\\fmService.cs",
+              "RelativeDocumentMoniker": "HOTELMANAGEMENT\\view\\fmService.cs",
+              "ToolTip": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\view\\fmService.cs",
+              "RelativeToolTip": "HOTELMANAGEMENT\\view\\fmService.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAowJEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T20:09:03.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "fmPayment.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\view\\fmPayment.Designer.cs",
+              "RelativeDocumentMoniker": "HOTELMANAGEMENT\\view\\fmPayment.Designer.cs",
+              "ToolTip": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\view\\fmPayment.Designer.cs",
+              "RelativeToolTip": "HOTELMANAGEMENT\\view\\fmPayment.Designer.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAMwGYAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T20:07:03.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "fmPayment.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\view\\fmPayment.cs",
               "RelativeDocumentMoniker": "HOTELMANAGEMENT\\view\\fmPayment.cs",
               "ToolTip": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\view\\fmPayment.cs [Design]",
               "RelativeToolTip": "HOTELMANAGEMENT\\view\\fmPayment.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T15:46:33.074Z",
+              "WhenOpened": "2024-11-03T19:51:02.789Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "fmCustomer.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\view\\fmCustomer.cs",
-              "RelativeDocumentMoniker": "HOTELMANAGEMENT\\view\\fmCustomer.cs",
-              "ToolTip": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\view\\fmCustomer.cs [Design]",
-              "RelativeToolTip": "HOTELMANAGEMENT\\view\\fmCustomer.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T15:16:20.842Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\Program.cs",
               "RelativeDocumentMoniker": "HOTELMANAGEMENT\\Program.cs",
-              "ToolTip": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\Program.cs*",
-              "RelativeToolTip": "HOTELMANAGEMENT\\Program.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAnAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\Program.cs",
+              "RelativeToolTip": "HOTELMANAGEMENT\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-03T15:15:40.142Z",
               "EditorCaption": ""
@@ -96,19 +156,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "fmRoom.cs",
-              "DocumentMoniker": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\view\\fmRoom.cs",
-              "RelativeDocumentMoniker": "HOTELMANAGEMENT\\view\\fmRoom.cs",
-              "ToolTip": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\view\\fmRoom.cs",
-              "RelativeToolTip": "HOTELMANAGEMENT\\view\\fmRoom.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAvwGEAAAANAAAAAAAAAA==",
+              "Title": "fmPayment.cs",
+              "DocumentMoniker": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\view\\fmPayment.cs",
+              "RelativeDocumentMoniker": "HOTELMANAGEMENT\\view\\fmPayment.cs",
+              "ToolTip": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\view\\fmPayment.cs",
+              "RelativeToolTip": "HOTELMANAGEMENT\\view\\fmPayment.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAEwJQAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T14:48:05.062Z",
+              "WhenOpened": "2024-11-03T19:34:09.114Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "fmRoom.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\view\\fmRoom.cs",
               "RelativeDocumentMoniker": "HOTELMANAGEMENT\\view\\fmRoom.cs",
@@ -120,41 +180,64 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "fmBookingDetails.cs",
+              "DocumentIndex": 1,
+              "Title": "fmCustomer.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\view\\fmCustomer.cs",
+              "RelativeDocumentMoniker": "HOTELMANAGEMENT\\view\\fmCustomer.cs",
+              "ToolTip": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\view\\fmCustomer.cs [Design]*",
+              "RelativeToolTip": "HOTELMANAGEMENT\\view\\fmCustomer.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T19:50:40.653Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "fmBookingDetails.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\view\\fmBookingDetails.cs",
               "RelativeDocumentMoniker": "HOTELMANAGEMENT\\view\\fmBookingDetails.cs",
-              "ToolTip": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\view\\fmBookingDetails.cs",
-              "RelativeToolTip": "HOTELMANAGEMENT\\view\\fmBookingDetails.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAkwBMAAABFAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\view\\fmBookingDetails.cs [Design]",
+              "RelativeToolTip": "HOTELMANAGEMENT\\view\\fmBookingDetails.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T14:41:19.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-03T19:50:51.715Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "fmService.cs",
-              "DocumentMoniker": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\view\\fmService.cs",
-              "RelativeDocumentMoniker": "HOTELMANAGEMENT\\view\\fmService.cs",
-              "ToolTip": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\view\\fmService.cs",
-              "RelativeToolTip": "HOTELMANAGEMENT\\view\\fmService.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAnwFoAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T14:41:04.526Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "fmService.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\view\\fmService.cs",
               "RelativeDocumentMoniker": "HOTELMANAGEMENT\\view\\fmService.cs",
               "ToolTip": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\view\\fmService.cs [Design]",
               "RelativeToolTip": "HOTELMANAGEMENT\\view\\fmService.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T14:41:02.138Z",
+              "WhenOpened": "2024-11-03T19:50:30.026Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "fmBooking.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\view\\fmBooking.cs",
+              "RelativeDocumentMoniker": "HOTELMANAGEMENT\\view\\fmBooking.cs",
+              "ToolTip": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\view\\fmBooking.cs [Design]",
+              "RelativeToolTip": "HOTELMANAGEMENT\\view\\fmBooking.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T19:58:27.73Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "fmBookingDetails.cs",
+              "DocumentMoniker": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\view\\fmBookingDetails.cs",
+              "RelativeDocumentMoniker": "HOTELMANAGEMENT\\view\\fmBookingDetails.cs",
+              "ToolTip": "C:\\Users\\Kim Nghi\\source\\repos\\HOTELMANAGEMENT\\HOTELMANAGEMENT\\view\\fmBookingDetails.cs",
+              "RelativeToolTip": "HOTELMANAGEMENT\\view\\fmBookingDetails.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAewDUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T19:20:20.345Z",
+              "EditorCaption": ""
             }
           ]
         }

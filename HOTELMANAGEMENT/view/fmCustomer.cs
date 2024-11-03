@@ -23,8 +23,7 @@ namespace HOTELMANAGEMENT.view
         public fmCustomer()
         {
             InitializeComponent();
-            LoadAllCustomers();
-
+           
         }
 
         private void fmCustomer_Load(object sender, EventArgs e)
@@ -157,82 +156,59 @@ namespace HOTELMANAGEMENT.view
             }
         }
 
-        private void LoadAllCustomers()
+        private void dgvCustomer_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            // Lấy tất cả dữ liệu từ bảng Customers
-            var allCustomers = dB.Customers.ToList();
-            dgvCustomer.DataSource = null; // Xóa dữ liệu cũ
-            dgvCustomer.DataSource = allCustomers;
+             
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
+        private void dgvCustomer_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            string searchValue = txtSearch.Text.Trim();
-
-            // Kiểm tra nếu textbox không có giá trị nào
-            if (string.IsNullOrEmpty(searchValue))
+            if (e.RowIndex >= 0)
             {
-                MessageBox.Show("Vui lòng nhập tên hoặc ID để tìm kiếm.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
+                DataGridViewRow row = dgvCustomer.Rows[e.RowIndex];
+                txtCustomerID.Text = row.Cells["CustomerID"].Value?.ToString();
+                txtName.Text = row.Cells["FullName"].Value?.ToString();
+                txtCitizenID.Text = row.Cells["CitizenID"].Value?.ToString();
+                txtPhone.Text = row.Cells["Phone"].Value?.ToString();
+
+
             }
-
-            // Tìm kiếm theo CustomerID hoặc CustomerName
-            var result = dB.Customers
-                           .Where(c => c.CustomerID.ToString() == searchValue ||
-                                       c.FullName.Contains(searchValue))
-                           .ToList();
-
-            // Kiểm tra nếu không có kết quả
-            if (result.Count == 0)
-            {
-                MessageBox.Show("Không tìm thấy kết quả nào phù hợp.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-
-            // Đổ dữ liệu vào DataGridView
-            dgvCustomer.DataSource = null;  // Xóa dữ liệu cũ
-            dgvCustomer.DataSource = result;
-
-            // Hiển thị thông tin hàng đầu tiên lên các TextBox
-            var firstCustomer = result.First();
-            txtCustomerID.Text = firstCustomer.CustomerID.ToString();
-            txtName.Text = firstCustomer.FullName;
-            txtCitizenID.Text = firstCustomer.CitizenID;
-            txtPhone.Text = firstCustomer.Phone;
-        }
-
-        private void txtSearch_TextChanged_1(object sender, EventArgs e)
-        {
-            string searchTerm = txtSearch.Text.ToLower();
-            List<Customer> dscustomer = dB.Customers.ToList();
-
-            // Lọc danh sách theo CustomerID hoặc FullName
-            var filteredList = dscustomer
-                .Where(s => s.CustomerID.ToString().ToLower().Contains(searchTerm) ||
-                            s.FullName.ToLower().Contains(searchTerm))
-                .ToList();
-
-            // Cập nhật dữ liệu đã lọc vào DataGridView
-            dgvCustomer.DataSource = null; // Xóa dữ liệu cũ
-            dgvCustomer.DataSource = filteredList;
         }
 
         private void btnReturn_Click(object sender, EventArgs e)
         {
-            // Gọi phương thức để tải lại toàn bộ dữ liệu
-            LoadAllCustomers();
-
-            // Xóa các ô nhập thông tin
-            txtCustomerID.Clear();
-            txtName.Clear();
-            txtCitizenID.Clear();
-            txtPhone.Clear();
-            txtSearch.Clear();
+            this.Close();
         }
 
-        private void dgvCustomer_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        private void btnSearch_Click(object sender, EventArgs e)
         {
-             
+            string searchValue = txtSearch.Text.Trim(); 
+
+            if (!string.IsNullOrEmpty(searchValue))
+            {
+                var searchResults = customerService.GetAll()
+                    .Where(c => c.CustomerID.Contains(searchValue) ||
+                                c.FullName.Contains(searchValue) ||
+                                c.CitizenID.Contains(searchValue) ||
+                                c.Phone.Contains(searchValue))
+                    .ToList();
+
+                if (searchResults.Count > 0)
+                {
+                   
+                    BindGrid(searchResults);
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy khách hàng phù hợp.");
+                    UpdateCustomerList(); 
+                }
+            }
+            else
+            {
+               
+                UpdateCustomerList();
+            }
         }
     }
 }
