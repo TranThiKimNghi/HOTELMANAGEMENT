@@ -26,5 +26,40 @@ namespace HOTELMANAGEMENT.view
         {
 
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            fmRoom fmRoom = new fmRoom();
+            fmRoom.ShowDialog();    
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            fmService fmService = new fmService();  
+            fmService.ShowDialog();
+        }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            fmCustomer fmCustomer = new fmCustomer();   
+            fmCustomer.ShowDialog();
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            fmPayment fmPayment = new fmPayment();  
+            fmPayment.ShowDialog();
+        }
+
+        private void btnBooking_Click(object sender, EventArgs e)
+        {
+            fmBookingDetails fmBookingDetails = new fmBookingDetails();
+            fmBookingDetails.ShowDialog();
+        }
+
+        private void fmBooking_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

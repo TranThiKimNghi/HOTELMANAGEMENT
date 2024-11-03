@@ -16,5 +16,10 @@ namespace HOTELMANAGEMENT.view
         {
             InitializeComponent();
         }
+
+        private void fmPayment_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
