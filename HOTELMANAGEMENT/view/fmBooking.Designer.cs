@@ -37,8 +37,6 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label2 = new System.Windows.Forms.Label();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.nudNumber = new System.Windows.Forms.NumericUpDown();
             this.btnBooking = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
@@ -75,7 +73,7 @@
             this.toolStripButton2,
             this.toolStripButton4,
             this.toolStripButton3});
-            this.toolStrip1.Location = new System.Drawing.Point(25, 93);
+            this.toolStrip1.Location = new System.Drawing.Point(25, 84);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(351, 27);
             this.toolStrip1.TabIndex = 16;
@@ -88,6 +86,7 @@
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(73, 24);
             this.toolStripButton1.Text = "Room";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // toolStripButton2
             // 
@@ -96,6 +95,7 @@
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Size = new System.Drawing.Size(80, 24);
             this.toolStripButton2.Text = "Service";
+            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
             // toolStripButton4
             // 
@@ -104,6 +104,7 @@
             this.toolStripButton4.Name = "toolStripButton4";
             this.toolStripButton4.Size = new System.Drawing.Size(96, 24);
             this.toolStripButton4.Text = "Customer";
+            this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
             // 
             // toolStripButton3
             // 
@@ -112,6 +113,7 @@
             this.toolStripButton3.Name = "toolStripButton3";
             this.toolStripButton3.Size = new System.Drawing.Size(89, 24);
             this.toolStripButton3.Text = "Payment";
+            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
             // splitContainer1
             // 
@@ -129,8 +131,7 @@
             // 
             this.splitContainer1.Panel2.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
             this.splitContainer1.Panel2.AllowDrop = true;
-            this.splitContainer1.Panel2.Controls.Add(this.label3);
-            this.splitContainer1.Panel2.Controls.Add(this.textBox1);
+            this.splitContainer1.Panel2.BackColor = System.Drawing.Color.PeachPuff;
             this.splitContainer1.Panel2.Controls.Add(this.nudNumber);
             this.splitContainer1.Panel2.Controls.Add(this.btnBooking);
             this.splitContainer1.Panel2.Controls.Add(this.label12);
@@ -168,29 +169,9 @@
             this.monthCalendar1.RightToLeftLayout = true;
             this.monthCalendar1.TabIndex = 1;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(331, 345);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(131, 23);
-            this.label3.TabIndex = 23;
-            this.label3.Text = "Expected date";
-            this.label3.UseWaitCursor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(335, 386);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(219, 22);
-            this.textBox1.TabIndex = 22;
-            this.textBox1.UseWaitCursor = true;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
             // nudNumber
             // 
-            this.nudNumber.Location = new System.Drawing.Point(335, 302);
+            this.nudNumber.Location = new System.Drawing.Point(323, 302);
             this.nudNumber.Name = "nudNumber";
             this.nudNumber.Size = new System.Drawing.Size(219, 22);
             this.nudNumber.TabIndex = 17;
@@ -198,7 +179,7 @@
             // 
             // btnBooking
             // 
-            this.btnBooking.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBooking.BackColor = System.Drawing.Color.DarkOrange;
             this.btnBooking.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBooking.Location = new System.Drawing.Point(245, 450);
             this.btnBooking.Name = "btnBooking";
@@ -207,12 +188,13 @@
             this.btnBooking.Text = "Booking";
             this.btnBooking.UseVisualStyleBackColor = false;
             this.btnBooking.UseWaitCursor = true;
+            this.btnBooking.Click += new System.EventHandler(this.btnBooking_Click);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(331, 264);
+            this.label12.Location = new System.Drawing.Point(319, 264);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(85, 23);
             this.label12.TabIndex = 13;
@@ -223,7 +205,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(331, 189);
+            this.label11.Location = new System.Drawing.Point(319, 189);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(97, 23);
             this.label11.TabIndex = 12;
@@ -234,7 +216,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(331, 114);
+            this.label10.Location = new System.Drawing.Point(319, 114);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(81, 23);
             this.label10.TabIndex = 11;
@@ -245,7 +227,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(39, 345);
+            this.label9.Location = new System.Drawing.Point(38, 352);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(101, 23);
             this.label9.TabIndex = 10;
@@ -288,7 +270,7 @@
             // dtpCO
             // 
             this.dtpCO.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpCO.Location = new System.Drawing.Point(335, 227);
+            this.dtpCO.Location = new System.Drawing.Point(323, 227);
             this.dtpCO.Name = "dtpCO";
             this.dtpCO.Size = new System.Drawing.Size(219, 22);
             this.dtpCO.TabIndex = 6;
@@ -297,7 +279,7 @@
             // dtpCI
             // 
             this.dtpCI.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpCI.Location = new System.Drawing.Point(335, 152);
+            this.dtpCI.Location = new System.Drawing.Point(323, 152);
             this.dtpCI.Name = "dtpCI";
             this.dtpCI.Size = new System.Drawing.Size(219, 22);
             this.dtpCI.TabIndex = 5;
@@ -306,7 +288,7 @@
             // cmbRoomType
             // 
             this.cmbRoomType.FormattingEnabled = true;
-            this.cmbRoomType.Location = new System.Drawing.Point(42, 384);
+            this.cmbRoomType.Location = new System.Drawing.Point(41, 391);
             this.cmbRoomType.Name = "cmbRoomType";
             this.cmbRoomType.Size = new System.Drawing.Size(219, 24);
             this.cmbRoomType.TabIndex = 4;
@@ -339,12 +321,12 @@
             // 
             // label5
             // 
-            this.label5.BackColor = System.Drawing.Color.SkyBlue;
+            this.label5.BackColor = System.Drawing.Color.PeachPuff;
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(3, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(611, 59);
+            this.label5.Size = new System.Drawing.Size(581, 59);
             this.label5.TabIndex = 0;
             this.label5.Text = "Booking";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -380,6 +362,7 @@
             this.Controls.Add(this.label1);
             this.Name = "fmBooking";
             this.Text = "fmBooking";
+            this.Load += new System.EventHandler(this.fmBooking_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.splitContainer1.Panel1.ResumeLayout(false);
@@ -404,8 +387,6 @@
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.NumericUpDown nudNumber;
         private System.Windows.Forms.Button btnBooking;
         private System.Windows.Forms.Label label12;

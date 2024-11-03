@@ -68,6 +68,7 @@
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(35, 35);
             this.toolStripButton1.Text = "toolStripButton1";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // splitContainer1
             // 
@@ -92,6 +93,7 @@
             this.splitContainer1.Panel2.Font = new System.Drawing.Font("Microsoft Tai Le", 8.9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.splitContainer1.Panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.splitContainer1.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
             this.splitContainer1.Size = new System.Drawing.Size(796, 516);
             this.splitContainer1.SplitterDistance = 347;
             this.splitContainer1.TabIndex = 14;
@@ -171,6 +173,7 @@
             this.btnlogin.TabIndex = 7;
             this.btnlogin.Text = "Login";
             this.btnlogin.UseVisualStyleBackColor = false;
+            this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
             // 
             // fmUser
             // 
