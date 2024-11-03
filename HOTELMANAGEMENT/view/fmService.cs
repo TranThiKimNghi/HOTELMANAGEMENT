@@ -16,15 +16,15 @@ namespace HOTELMANAGEMENT.view
     public partial class fmService : Form
     {
         private readonly serviceServic serviceService = new serviceServic();
-        private readonly ServiceDetail serviceDetail = new ServiceDetail();
+        private readonly ServiceDetailService serviceDetail = new ServiceDetailService();
         private readonly HotelContextDB context = new HotelContextDB();
         public fmService()
         {
             InitializeComponent();
         }
 
-        private void BindGrid(List<Service> listService) 
-        { 
+        private void BindGrid(List<Service> listService)
+        {
             dgvService.Rows.Clear();
             foreach (var item in listService)
             {
@@ -41,14 +41,13 @@ namespace HOTELMANAGEMENT.view
                 dgvService.Rows[index].Cells[3].Value = item.Price;
             }
         }
-        private void UpdateServiceList( )
+        private void UpdateServiceList()
         {
             try
             {
                 var listService = serviceService.GetAll();
-
+                var listServiceDetail = serviceDetail.GetAll();
                 BindGrid(listService);
-
             }
             catch (Exception ex)
             {
@@ -89,14 +88,18 @@ namespace HOTELMANAGEMENT.view
                 var service = new Service
                 {
                     ServiceID = txtServiceID.Text,
-                    ServiceName = cmbServiceName.Text, 
+                    ServiceName = cmbServiceName.Text,
                     Price = int.Parse(txtPrice.Text),
                 };
-
-                var serviceDetail = dB.ServiceDetails
-                    .FirstOrDefault(sd => sd.ServiceID == txtServiceID.Text);
-
                 dB.Services.Add(service);
+
+                var serviceDetail = new ServiceDetail
+                {
+                    ServiceID = service.ServiceID,
+                    Quantity = int.Parse(txtQuantity.Text)
+                };
+
+
                 dB.ServiceDetails.Add(serviceDetail);
                 dB.SaveChanges();
                 UpdateServiceList();
@@ -107,6 +110,40 @@ namespace HOTELMANAGEMENT.view
             {
                 MessageBox.Show(ex.InnerException?.Message ?? ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtServiceID.Text))
+            {
+                MessageBox.Show("Vui lòng chọn dịch vụ cần xóa.");
+                return;
+            }
+            var result = MessageBox.Show("Bạn có chắc chắn muốn xóa dịch vụ này không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                try
+                {
+                    var service = serviceService.GetServiceById(txtServiceID.Text);
+                    if (service != null)
+                    {
+                        serviceService.DeleteService(txtServiceID.Text);
+
+                        UpdateServiceList();
+                        MessageBox.Show("Xóa dữ liệu thành công!");
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
